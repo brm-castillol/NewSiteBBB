@@ -2,8 +2,20 @@
 
 footer.container-fluid
 	div.row
-		div.col-lg-12
-			a.terminosy-condi.block-center.text-center terminos y condiciones
+		div.col-lg-1.col-md-2.col-xs-1.col-xs-1.cont-logo-colom
+			+image("logo-colombina.png", "Paso 1")(class="img-responsive")
+
+		ul.cont-text-footer.col-lg-10
+			li
+				a(href="#", onClick="seguimientoEventos('footer','clic','Privacidad')").block-center.text-center Aviso de Privacidad
+			
+			li
+				a(href="#", onClick="seguimientoEventos('footer','clic','Terminos')").block-center.text-center términos y condiciones
+
+			li
+				a(href="#", onClick="seguimientoEventos('footer','clic','HabeasData')").block-center.text-center Política de Protección de Datos Personales
+
+
 
 
 ///-Footer
@@ -12,6 +24,7 @@ footer.container-fluid
 //-Estos son los scripts que van en todos los htmls del desarrollo
 if debug == false
 	script(src='js/libs/jquery.js')
+	script(src='js/Sitio-BBB.js')
 	script(src='js/libs/jquery-ui.js')
 	script(src='js/libs/bootstrap.min.js')
 	script(src='js/libs/jquery.validate.js')
