@@ -2,10 +2,12 @@
 
 footer.container-fluid
 	div.row
-		div.col-lg-1.col-md-2.col-xs-1.col-xs-1.cont-logo-colom
-			+image("logo-colombina.png", "Paso 1")(class="img-responsive")
+		div.col-lg-1.col-md-2.col-sm-2.col-xs-3.col-lg-offset-0.col-md-offset-0.col-sm-offset-0.col-xs-offset-4.cont-logo-colom
+			a(href="#", onClick="seguimientoEventos('footer','clic','Colombina')")
 
-		ul.cont-text-footer.col-lg-10
+				+image("logo-colombina.png", "Paso 1")(class="img-responsive")
+
+		ul.cont-text-footer
 			li
 				a(href="#", onClick="seguimientoEventos('footer','clic','Privacidad')").block-center.text-center Aviso de Privacidad
 			
@@ -24,9 +26,11 @@ footer.container-fluid
 //-Estos son los scripts que van en todos los htmls del desarrollo
 if debug == false
 	script(src='js/libs/jquery.js')
+	script(src='js/libs/vivus.js')
 	script(src='js/Sitio-BBB.js')
 	script(src='js/libs/jquery-ui.js')
 	script(src='js/libs/bootstrap.min.js')
+	script(src='js/libs/slider.js')
 	script(src='js/libs/jquery.validate.js')
 
 else

@@ -1,0 +1,53 @@
+extends partials/base
+
+block title
+	-var titulo = "Paises";
+	title Selecciona tu región
+
+block content
+	div.img-fondo-1.col-lg-6.col-md-9.col-sm-9.col-xs-10.col-lg-offset-0.col-md-offset-0.col-sm-offset-0.col-xs-offset-0
+		img.img-responsive(src='../images/fondos/img-trangII-azul.png')
+	div.img-fondo-2.col-lg-6.col-md-6.col-sm-9.col-xs-10.col-lg-offset-8.col-md-offset-7.col-sm-offset-7.col-xs-offset-0
+		img.img-responsive(src='../images/fondos/img-trang-mag.png')
+	div.img-fondo-3.col-lg-4.col-md-4.col-sm-4.col-xs-4.col-lg-offset-8.col-md-offset-8.col-sm-offset-8.col-xs-offset-8
+		img.img-responsive(src='../images/fondos/img-xbox.png')
+	div.img-fondo-4.col-lg-4.col-md-4.col-sm-4.col-xs-4.col-lg-offset-0.col-md-offset-0.col-sm-offset-0.col-xs-offset-0
+		img.img-responsive(src='../images/fondos/img-sepen-amarilla.png')
+	div.img-donde-mapa.col-lg-7.col-md-8.col-sm-9.col-xs-12.col-lg-offset-0.col-md-offset-0.col-sm-offset-0.col-xs-offset-0
+		img.img-responsive(src='../images/fondos/img-donde.png')
+	section.cont-paises
+
+		div.row
+			div.col-lg-3.col-md-3.col-sm-4.col-xs-6.col-lg-offset-4.col-md-offset-4.col-sm-offset-4.col-xs-offset-3.contenedor-logoBBB
+				a(href="inicio.htlm")
+					+image("logo-BBB.png", "Logo BonBonBum")(class="img-responsive")
+
+		div.row
+			div.contenedor-mapa
+
+				include partials/mapa.jade
+
+			div.col-lg-5.col-md-5.col-sm-5.col-xs-10.col-lg-offset-8.col-md-offset-8.col-sm-offset-2.col-xs-offset-1.conte-selec-regiones
+
+				button.selecione-region.
+						Selecciona <i class="flecha-abajo"></i>
+
+				div.opciones-region
+					ul.cont-region
+						li
+							a.regiones-BBB(href="javascript:;" , data-region="RegionAndina").
+								Regi&oacute;n Andina
+
+						li
+							a.regiones-BBB(href="javascript:;" , data-region="CentroAndina").
+								Centro Am&eacute;rica
+
+						li
+							a.regiones-BBB(href="javascript:;" , data-region="Resto").
+								Colombia y el resto del mundo
+
+
+
+
+
+block Scripts

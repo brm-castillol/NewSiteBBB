@@ -36,8 +36,9 @@ body
 
 
 	//-Layout del header (logo, menu, login, etc)
-
-	include header.jade
+	if titulo != "Paises"
+		include header.jade
+	
 	
 	//-Contenido de cada page
 	div.container-fluid

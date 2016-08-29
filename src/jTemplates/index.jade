@@ -1,12 +1,56 @@
 extends partials/base
 
 block title
-	-var titulo = "BonBonBum";
+	-var titulo = "Home";
 	title BonBonBum
 
 block content
+	div.img-fondo-5.col-lg-5.col-md-5.col-sm-5.col-xs-5.col-lg-offset-6.col-md-offset-5.col-sm-offset-4.col-xs-offset-3
+		img.img-responsive(src='../images/fondos/img-trang-verde.png')
+	div.img-fondo-6
+	div.img-fondo-7.col-lg-4.col-md-5.col-sm-4.col-xs-5.col-lg-offset-0.col-md-offset-0.col-sm-offset-0.col-xs-offset-2
+		img.img-responsive(src='../images/fondos/img-sepen-roja.png')
 
-	
+	section.conte-home
+
+		div#myCarousel.carousel.slide(data-ride="carousel")
+
+			ol.carousel-indicators
+				li.active(data-target="#myCarousel", data-slide-to="0")
+				li(data-target="#myCarousel", data-slide-to="1")
+
+			div.carousel-inner
+				div.item.active
+					img(src='/images/Banners/banner-Morazul.png', style="width:100%;")
+
+				div.item
+					img(src='/images/Banners/banner-ejemplo.png', style="width:100%;")
+
+
+			a.left.carousel-control(href="#myCarousel", data-slide="prev")
+				span
+					img.antes(src='/images/img-flechaP.png')
+			a.right.carousel-control(href="#myCarousel", data-slide="next")
+				span
+					img.despues(src='/images/img-flechaN.png')
+
+
+		div.row
+			div.col-lg-4.col-md-5.col-sm-4.col-xs-5.col-lg-offset-0.col-md-offset-0.col-sm-offset-0.col-xs-offset-0.contenedor-redes
+			ul.redes-sociales
+				li
+					a(href="#", alt="", target="_blank").icono-redes.icono-facebook
+
+				li
+					a(href="#", alt="", target="_blank").icono-redes.icono-twitter
+
+				li
+					a(href="#", alt="", target="_blank").icono-redes.icono-youtube
+				li
+					a(href="#", alt="", target="_blank").icono-redes.icono-instagram
+				li
+					a(href="#", alt="", target="_blank").icono-redes.icono-share
+
 
 
 block Scripts
