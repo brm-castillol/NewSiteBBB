@@ -27,7 +27,6 @@ footer.container-fluid
 if debug == false
 	script(src='js/libs/jquery.js')
 	script(src='js/libs/vivus.js')
-	script(src='js/Sitio-BBB.js')
 	script(src='js/libs/jquery-ui.js')
 	script(src='js/libs/bootstrap.min.js')
 	script(src='js/libs/slider.js')
@@ -36,3 +35,10 @@ if debug == false
 else
 	script(src="js/libs.frontend-brm.min.js")
 	script(src='js/frontend-brm.js')
+
+
+if titulo === "Productos"
+	script(src='js/Sitio-BBB-producto.js')
+
+else
+	script(src='js/Sitio-BBB.js')

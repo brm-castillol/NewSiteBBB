@@ -1,5 +1,5 @@
 .cont-titulo-sabores
-	margin 6% 0 0 6%
+	margin 8% 0 0 6%
 	position absolute
 	z-index -3
 	
@@ -14,7 +14,8 @@
 	
 .titulo-sabores
 	font-family $RalewayL
-	font-style 2rem
+	font-size 2rem
+	text-transform uppercase
 	font-weight 100
 	margin 0
 
@@ -49,8 +50,14 @@
 	transform-origin bottom left
 
 .conte-sabores-BBB
-	padding-left 0 
+	padding-left 0
+	margin-top 2%
 
+.cont-header-sabor
+	position relative
+	top 28px
+	z-index 1
+	
 .fondo-titulo-sabores
 	background-image url("../images/fondos/back-fondo-titulo.png")
 	background-repeat no-repeat
@@ -60,7 +67,7 @@
 
 .cont-slide-banderas
 	float left
-	margin-top 5%
+	margin-top 3%
 	width 15%
 
 .fondo-titulo-sabores > h3
@@ -76,7 +83,7 @@
 	text-decoration none
 	color $Morado
 		
-	&:hover
+	&:hover, &:active
 		color $Fucsia
 	
 .slide-sabores
@@ -89,12 +96,50 @@
 .slide-banderas-s
 	padding 0%
 	margin 0
-		 
-	li.banderas
-		float left
-		width 50px
-		list-style none
 
 .cont-seleccion-sabores
 	background-image url("../images/fondos/img-fondo-sabores.png")
 	background-repeat no-repeat
+	background-size 100%
+	left -17px
+	position relative
+	top -12px
+
+.conten-sabores
+	margin 0
+	padding 9% 0 14% 8%
+	width 100%
+	
+	li.sabores-radius
+		text-decoration none
+		display inline-block
+		width 80px
+		height 80px
+		border-radius 100%
+		background-color $Blanco
+		overflow hidden
+		margin-right 10px
+		opacity 0.5
+		transitionBase()
+				
+		&:hover, &:active, &:focus
+			width 90px
+			height 90px
+			opacity 1
+
+.slide-bbb-mobile
+	float left
+	margin 0 2px 0 14px
+	overflow hidden
+	width 61%
+
+.cont-flechas-bbb
+	float left
+	width 10%
+	margin-top 40%
+
+.infor-bbb
+	padding 0
+	
+	
+	

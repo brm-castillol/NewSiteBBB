@@ -27,12 +27,11 @@ var _gaq = _gaq || [];
  var hi = new Vivus('mapa', {type: 'delayed', duration: 30, start: "manual",dashGap: 20, forceRender: true },
         function () {
           if (window.console) {
-            //console.log('Animation finished. [log triggered from callback]');N
             jQuery("#mapa .parte-azul>path").attr('class','relleno-fondo');
-            //jQuery(".parte-morada>path").attr('class','relleno-fondo');
-            //jQuery(".parte-blanca path").addClass('relleno-fondo');
           }
         });
+ 
+
  
 jQuery(document).ready(function($) {
   hi.play();
@@ -48,4 +47,5 @@ jQuery(document).ready(function($) {
     
   });
 });
+
 

@@ -25,6 +25,30 @@
 		width 68%
 		left 11%
 	
+	.sabores-radius
+		height 68px !important
+		width 68px !important
+		transitionBase()
+				
+		&:hover, &:active, &:focus
+			width 70px !important
+			height 70px !important
+			opacity 1
+	
+	.cont-mano-sabores
+		bottom 6%
+		
+@media (max-width: 900px)
+		
+	section.conte-sabores
+		display none
+	
+	section.cont-sabores-mobile
+		display block !important
+	
+	.cont-titulo-sabores
+		margin 8% 0 0 15%
+
 @media (max-width: 999px)
 	div.cont-ipad
 		background none
@@ -79,6 +103,16 @@
 	
 	.despues
 		margin 75% 0 0 20%
+
+	
+	.cont-titulo-sabores
+		margin 24% 0 0 16% !important
+	
+	.cont-slide-banderas
+		margin-left 33%
+	
+	.cont-BBB-sabor
+		margin-left 2% !important
 
 @media (max-width: 640px)
 
@@ -173,7 +207,33 @@
 	.contenedor-noticias, .noticias
 		height auto
 	
+	.img-fondo-14
+		display none
 	
+@media (max-width: 480px)
+
+	.fondo-titulo-sabores > h3
+		font-size 2rem
+		margin-top 3%
+	
+	.cont-slide-banderas
+		width 40% !important
+		margin-left 31%
+	
+	.cont-titulo-sabores
+		margin 51% 0 0 8% !important
+		width 95%
+	
+	.cont-mano-sabores
+		left -10% !important
+	
+	.contene-fon-sabores
+		left 18% !important
+		top 6% !important
+	
+	.cont-BBB-sabor
+		margin 2% 0 0 8%
+		
 
 @media (max-width: 414px)
 	.img-donde-mapa
@@ -221,11 +281,14 @@
 	.img-fondo-7
 		margin-left -7%
 	
+	.img-fondo-14
+		display none
+		
     	
 @media (max-width: 360px)
+
 	.conte-selec-regiones
 		margin-top 20%
-	
 
 	.contene-logo-BBB
 		width 53%
@@ -246,7 +309,37 @@
 		width 90%
 		margin-bottom 20px
 		
+	.cont-mano-sabores
+		display none !important
+	
+	.cont-BBB-sabor
+		margin-top 8% !important
+		width 46% !important
+	
+	.cont-titulo-sabores
+		margin 81% 0 0 4% !important
+		width 95%
+	
+	.cont-titulo-sabores
+		margin 81% 0 0 0 !important
+		width 100%
+		
+	.fondo-titulo-sabores > h3
+		font-size 1.5rem !important
+	
+	.cont-header-sabor
+		padding 0 !important
+	
+	.info-sabores-bbb > p
+		font-size 1.1rem !important
+		line-height 1.2rem !important
+	
+	.img-fondo-14
+		display block !important
+	
 
+		
+		
 @media (max-width: 320px)
 
 	.conte-selec-regiones
@@ -288,3 +381,6 @@
 	.contenedor-noticias
 		left 5%
 		width 90%
+	
+
+	

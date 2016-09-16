@@ -5,8 +5,9 @@ block title
 	title BonBonBum
 
 block content
-	div.img-fondo-13.col-lg-5.col-md-5.col-sm-5.col-xs-3.col-lg-offset-0.col-md-offset-0.col-sm-offset-0.col-xs-offset-0
-		img.img-responsive(src='../images/fondos/img-sepen-azul.png')
+	div.img-fondo-13.col-lg-6.col-md-6.col-sm-6.col-xs-9.col-lg-offset-0.col-md-offset-0.col-sm-offset-0.col-xs-offset-0
+
+		include partials/serp-azul.jade
 
 	section.conte-sabores
 		div.row
@@ -16,7 +17,7 @@ block content
 			div.col-lg-2.col-md-2.col-sm-2.col-xs-2.cont-BBB-sabor
 				img.img-responsive(src='../images/sabores/bbb-moraA-e.png')
 			
-			div.col-lg-5.col-md-5.col-sm-5.col-xs-5.col-lg-offset-0.col-md-offset-1.col-sm-offset-1.col-xs-offset-1.cont-titulo-sabores
+			div.col-lg-5.col-md-5.col-sm-10.col-xs-10.col-lg-offset-0.col-md-offset-1.col-sm-offset-1.col-xs-offset-1.cont-titulo-sabores
 				div.col-lg-12.col-md-12.col-sm-12.col-xs-12
 					div.contene-fon-sabores
 						h3.titulo-sabores
@@ -25,82 +26,80 @@ block content
 						p.
 							  Es súper deli, el sabor de la morazul con el refrescante chicle de menta se convierten en una creación que te hará cerrar los ojos y suspirar. Perfecto para empezar bien esos momentos random y terminarlos mejor.
 
-			div.col-lg-6.col-md-6.col-sm-6.col-xs-6.col-lg-offset-4.col-md-offset-0.col-sm-offset-0.col-xs-offset-0.conte-sabores-BBB
+			div.col-lg-6.col-md-6.col-sm-6.col-xs-6.col-lg-offset-4.col-md-offset-4.col-sm-offset-0.col-xs-offset-0.conte-sabores-BBB
 				div.cont-header-sabor                                   
 					div.fondo-titulo-sabores
 						h3.
 							DESCUBRE A QUÉ <strong>SABE LA DIVERSIÓN</strong>
 					div.cont-slide-banderas
 						div.cont-flechas.prev-sab
-							a(href="#").
+							a(href="#carouselBanderas")(role="button", data-slide="prev").
 										<
 
-						div.slide-sabores
-							ul.slide-banderas-s
-								li.banderas.banderas-1
-									img(src="../images/banderas/bandera-colombia.png", alt="bandera-colombia")
-								li.banderas.banderas-2
-									img(src="../images/banderas/bandera-colombia.png", alt="bandera-colombia")
-								li.banderas.banderas-3
-									img(src="../images/banderas/bandera-colombia.png", alt="bandera-colombia")
-								li.banderas.banderas-4
-									img(src="../images/banderas/bandera-colombia.png", alt="bandera-colombia")
-								li.banderas.banderas-5
-									img(src="../images/banderas/bandera-colombia.png", alt="bandera-colombia")
-								li.banderas.banderas-6
-									img(src="../images/banderas/bandera-colombia.png", alt="bandera-colombia")
+						div#carouselBanderas.slide-sabores.carousel.slide(data-ride="carousel")
+							div.carousel-inner.slide-banderas-s(role="listbox")
+								div.item.active
+									a(href="#")
+										img(src="../images/banderas/bandera-colombia.png", alt="bandera-colombia")
+								div.item
+									a(href="#")
+										img(src="../images/banderas/bandera-colombia.png", alt="bandera-colombia")
+								div.item
+									a(href="#")
+										img(src="../images/banderas/bandera-colombia.png", alt="bandera-colombia")
+								div.item
+									a(href="#")
+										img(src="../images/banderas/bandera-colombia.png", alt="bandera-colombia")
+								div.item
+									a(href="#")
+										img(src="../images/banderas/bandera-colombia.png", alt="bandera-colombia")
+								div.item
+									a(href="#")
+										img(src="../images/banderas/bandera-colombia.png", alt="bandera-colombia")
 
 						div.cont-flechas.next-sab
-							a(href="#").
+							a(href="#carouselBanderas")(role="button", data-slide="next").
 										>
 
 					div.clear
 
 				div.cont-seleccion-sabores
 					
-					ul.conten-sabores
-						li
-							a(href="")
-								img(src="", alt="")
-					ul.conten-sabores
-						li
-							a(href="")
-								img(src="", alt="")
-					ul.conten-sabores
-						li
-							a(href="")
-								img(src="", alt="")
-					ul.conten-sabores
-						li
-							a(href="")
-								img(src="", alt="")
-					ul.conten-sabores
-						li
-							a(href="")
-								img(src="", alt="")
-					ul.conten-sabores
-						li
-							a(href="")
-								img(src="", alt="")
-					ul.conten-sabores
-						li
-							a(href="")
-								img(src="", alt="")
-					ul.conten-sabores
-						li
-							a(href="")
-								img(src="", alt="")
-					ul.conten-sabores
-						li
-							a(href="")
-								img(src="", alt="")
-					ul.conten-sabores
-						li
-							a(href="")
-								img(src="", alt="")
+					ul#sabor-pais.conten-sabores
+						li.sabores-radius
+							a(href="https://www.facebook.com/")(target="_blank")
+								img.img-responsive(src='../images/sabores/bbb-moraA-e.png')
+						li.sabores-radius
+							a(href="#")
+								img.img-responsive(src='../images/sabores/bbb-moraA-e.png')
+						li.sabores-radius
+							a(href="#")
+								img.img-responsive(src='../images/sabores/bbb-moraA-e.png')
+						li.sabores-radius
+							a(href="#")
+								img.img-responsive(src='../images/sabores/bbb-moraA-e.png')
+						li.sabores-radius
+							a(href="#")
+								img.img-responsive(src='../images/sabores/bbb-moraA-e.png')
+						li.sabores-radius
+							a(href="#")
+								img.img-responsive(src='../images/sabores/bbb-moraA-e.png')
+						li.sabores-radius
+							a(href="#")
+								img.img-responsive(src='../images/sabores/bbb-moraA-e.png')
+						li.sabores-radius
+							a(href="#")
+								img.img-responsive(src='../images/sabores/bbb-moraA-e.png')
+						li.sabores-radius
+							a(href="#")
+								img.img-responsive(src='../images/sabores/bbb-moraA-e.png')
+						li.sabores-radius
+							a(href="#")
+								img.img-responsive(src='../images/sabores/bbb-moraA-e.png')
 
-		div.row
-			div.col-lg-4.col-md-5.col-sm-4.col-xs-5.col-lg-offset-0.col-md-offset-0.col-sm-offset-0.col-xs-offset-0.contenedor-redes
+
+		div.row.redes-sabores
+			div.col-lg-4.col-md-5.col-sm-4.col-xs-5.col-lg-offset-1.col-md-offset-0.col-sm-offset-0.col-xs-offset-0.contenedor-redes
 			ul.redes-sociales
 				li
 					a(href="#", alt="", target="_blank").icono-redes.icono-facebook
@@ -115,8 +114,89 @@ block content
 				li
 					a(href="#", alt="", target="_blank").icono-redes.icono-share
 
-	
+	section.cont-sabores-mobile(style="display:none;")
+		div.row
+			div.cont-header-sabor.col-lg-6.col-md-6.col-sm-9.col-xs-10.col-lg-offset-0.col-md-offset-0.col-sm-offset-2.col-xs-offset-1                                   
+					div.fondo-titulo-sabores
+						h3.
+							DESCUBRE A QUÉ <strong>SABE LA DIVERSIÓN</strong>
+					div.cont-slide-banderas
+						div.cont-flechas.prev-sab
+							a(href="#carouselBanderas")(role="button", data-slide="prev").
+										<
 
+						div#carouselBanderas.slide-sabores.carousel.slide(data-ride="carousel")
+							div.carousel-inner.slide-banderas-s(role="listbox")
+								div.item.active
+									a(href="#")
+										img(src="../images/banderas/bandera-colombia.png", alt="bandera-colombia")
+								div.item
+									a(href="#")
+										img(src="../images/banderas/bandera-colombia.png", alt="bandera-colombia")
+								div.item
+									a(href="#")
+										img(src="../images/banderas/bandera-colombia.png", alt="bandera-colombia")
+								div.item
+									a(href="#")
+										img(src="../images/banderas/bandera-colombia.png", alt="bandera-colombia")
+								div.item
+									a(href="#")
+										img(src="../images/banderas/bandera-colombia.png", alt="bandera-colombia")
+								div.item
+									a(href="#")
+										img(src="../images/banderas/bandera-colombia.png", alt="bandera-colombia")
+
+						div.cont-flechas.next-sab
+							a(href="#carouselBanderas")(role="button", data-slide="next").
+										>
+
+			div.col-lg-2.col-md-2.col-sm-3.col-xs-5.cont-mano-sabores
+				img.img-responsive(src='../images/fondos/img-mano-sabores.png')
+
+			div.col-lg-2.col-md-2.col-sm-3.col-xs-5.cont-BBB-sabor
+				div.cont-flechas-bbb.prev-sab
+							a(href="#carouselSabores")(role="button", data-slide="prev")
+								img.img-responsive(src='../images/img-flechaNoti-P.png')
+
+						div#carouselSabores.slide-bbb-mobile.carousel.slide(data-ride="carousel")
+							div.carousel-inner.slide-banderas-s(role="listbox")
+								div.item.active
+									a(href="#")
+										img.img-responsive(src='../images/sabores/bbb-moraA-e.png')
+								div.item
+									a(href="#")
+										img.img-responsive(src='../images/sabores/bbb-moraA-e.png')
+								div.item
+									a(href="#")
+										img.img-responsive(src='../images/sabores/bbb-moraA-e.png')
+								div.item
+									a(href="#")
+										img.img-responsive(src='../images/sabores/bbb-moraA-e.png')
+								div.item
+									a(href="#")
+										img.img-responsive(src='../images/sabores/bbb-moraA-e.png')
+								div.item
+									a(href="#")
+										img.img-responsive(src='../images/sabores/bbb-moraA-e.png')
+
+						div.cont-flechas-bbb.next-sab
+							a(href="#carouselSabores")(role="button", data-slide="next")
+								img.img-responsive(src='../images/img-flechaNoti-N.png')
+				
+			
+			div.col-lg-5.col-md-5.col-sm-8.col-xs-10.col-lg-offset-0.col-md-offset-1.col-sm-offset-1.col-xs-offset-1.cont-titulo-sabores
+				div.col-lg-12.col-md-12.col-sm-12.col-xs-12.infor-bbb
+					div.contene-fon-sabores
+						h3.titulo-sabores
+							<strong class="bold-titulos">¡OYE!</strong><br>prueba el <strong class="bold-titulos">MORAZUL FRESH</strong>
+					div.info-sabores-bbb
+						p.
+							  Es súper deli, el sabor de la morazul con el refrescante chicle de menta se convierten en una creación que te hará cerrar los ojos y suspirar. Perfecto para empezar bien esos momentos random y terminarlos mejor.
+
+
+	
+	div.img-fondo-14.col-lg-5.col-md-5.col-sm-5.col-xs-3.col-lg-offset-0.col-md-offset-0.col-sm-offset-0.col-xs-offset-0
+		img.img-responsive(src='../images/fondos/img-fondo-saboresII.png')
 
 
 block Scripts
