@@ -2,7 +2,7 @@
 
 footer.container-fluid
 	div.row
-		div.col-lg-1.col-md-2.col-sm-2.col-xs-3.col-lg-offset-0.col-md-offset-0.col-sm-offset-0.col-xs-offset-4.cont-logo-colom
+		div.col-lg-1.col-md-1.col-sm-2.col-xs-3.col-lg-offset-0.col-md-offset-0.col-sm-offset-0.col-xs-offset-4.cont-logo-colom
 			a(href="#", onClick="seguimientoEventos('footer','clic','Colombina')")
 
 				+image("logo-colombina.png", "Paso 1")(class="img-responsive")
@@ -25,9 +25,8 @@ footer.container-fluid
 //Scripts
 //-Estos son los scripts que van en todos los htmls del desarrollo
 if debug == false
-	script(src='js/libs/jquery.js')
+	script(src='js/libs/jquery-historia.js')
 	script(src='js/libs/vivus.js')
-	script(src='js/libs/jquery-ui.js')
 	script(src='js/libs/bootstrap.min.js')
 	script(src='js/libs/slider.js')
 	script(src='js/libs/jquery.validate.js')
@@ -40,5 +39,9 @@ else
 if titulo === "Productos"
 	script(src='js/Sitio-BBB-producto.js')
 
+else if titulo == "Historia"
+	script(src='js/Sitio-BBB-historia.js')
+
 else
 	script(src='js/Sitio-BBB.js')
+
